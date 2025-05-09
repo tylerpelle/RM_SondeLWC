@@ -651,7 +651,7 @@ for current_folder in subfolders:
     plt.title(f'Time Range: {start_time} to {end_time} UTC', fontsize=14)
     
     # Add Rainmaker logo in the upper right of the skew-T plot
-    logo  = image.imread('/Users/tylerpelle/Desktop/PythonDownloads/Rain.png')
+    logo  = image.imread(os.getcwd() + '/Rain.png')
     newax = fig.add_axes([0.51, 0.82, 0.1, 0.1])  
     newax.imshow(logo)
     newax.axis('off')
