@@ -1,2 +1,4 @@
 # RM_SondeLWC
-Processing Rawindsonde and Anasphere LWC sensor data
+Python code used to process Anasphere SLWC sonde data together with iMet Radiosonde data. The package contains two example launches to test the processing on and should be ready to use right out of the box. The code will loop through all subdirectories in the "Launches" directory to process the data and produce two figures: (1) a Skew-T plot with vertical profiles of SLWC and ICE concentrations (g/m^3); (2) A plot of the raw and filtered Anasphere frequency data so that we know whether or not the filtering we applied (to cut through the noise) is enough. Note that while I chose filtering parameters based on what gave relatively decent results based on all of the sondes, the filtering will likey need to be optimized on a case-by-case basis to get the best signal-to-noise ratio. 
+
+This code should be set to run right out of the box and is certainly a working version, so I expect this will be updated often as fieldwork progresses. 
